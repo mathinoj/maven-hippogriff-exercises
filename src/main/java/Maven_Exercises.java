@@ -9,6 +9,11 @@ public class Maven_Exercises {
             System.out.println("What it dew? ");
             String response = input.nextLine();
             System.out.println("isNumeric: " +StringUtils.isNumeric(response));
+            if (StringUtils.isNumeric(response) == false){
+                System.out.println("Not numeric.");
+            } else {
+                System.out.println("Numeric.");
+            }
             System.out.println("Swap: " +StringUtils.swapCase(response));
             System.out.println("Reverse: " +StringUtils.reverse(response));
 
